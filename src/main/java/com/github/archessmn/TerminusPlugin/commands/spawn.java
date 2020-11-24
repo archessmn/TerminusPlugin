@@ -1,4 +1,4 @@
-package commands;
+package com.github.archessmn.TerminusPlugin.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
