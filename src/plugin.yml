@@ -1,5 +1,5 @@
 name: Terminus
-main: main.java.com.github.archessmn.Terminus.main
+main: com.github.archessmn.TerminusPlugin.main
 version: 1.0.0
 api-version: 1.16
 

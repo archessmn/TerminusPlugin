@@ -15,9 +15,9 @@ public class spawn implements CommandExecutor {
             commandSender.sendMessage(">> Travelling to spawn...");
             Location worldSpawnPoint = Bukkit.getWorlds().get(0).getSpawnLocation();
             player.teleport(worldSpawnPoint);
-            player.setRotation(180, 0);
         } else {
             System.out.print("You cannot send this command from the console.");
+            System.out.close();
         }
         return true;
     }
