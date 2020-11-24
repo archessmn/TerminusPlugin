@@ -11,10 +11,11 @@ public class spawn implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command cmd, String label, String[] args) {
         if (commandSender instanceof Player) {
+            Player player = (Player) commandSender;
+            commandSender.sendMessage(">> Travelling to spawn...");
             Location worldSpawnPoint = Bukkit.getWorlds().get(0).getSpawnLocation();
-            ((Player) commandSender).getLocation().setX(worldSpawnPoint.getX());
-            ((Player) commandSender).getLocation().setY(worldSpawnPoint.getY());
-            ((Player) commandSender).getLocation().setZ(worldSpawnPoint.getZ());
+            player.teleport(worldSpawnPoint);
+            player.setRotation(180, 0);
         } else {
             System.out.print("You cannot send this command from the console.");
         }
