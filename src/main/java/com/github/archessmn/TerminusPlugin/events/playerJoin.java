@@ -1,5 +1,6 @@
 package com.github.archessmn.TerminusPlugin.events;
 
+import com.github.archessmn.TerminusPlugin.functions.playerName;
 import com.github.archessmn.TerminusPlugin.main;
 import com.github.archessmn.TerminusPlugin.ymlFiles.playerData;
 import org.bukkit.entity.Player;
@@ -27,7 +28,9 @@ public class playerJoin implements Listener {
             Object playerMainName = playerData.get().getString(uuid + ".mainName");
             event.setJoinMessage("§f[§2§l+§f]§7 " + playerMainName);
         } else {
-
+            playerName.defaultNameSettings(player);
+            Object playerMainName = playerData.get().getString(uuid + ".mainName");
+            event.setJoinMessage("§f[§2§l+§f]§7 Welcome " + playerMainName + " to the server.");
         }
     }
 

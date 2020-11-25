@@ -12,7 +12,7 @@ public class spawn implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command cmd, String label, String[] args) {
         if (commandSender instanceof Player) {
             Player player = (Player) commandSender;
-            commandSender.sendMessage("§5>> §dTravelling to spawn...");
+            commandSender.sendMessage("§7[§5§l>§7] §dTravelling to spawn...");
             Location worldSpawnPoint = Bukkit.getWorlds().get(0).getSpawnLocation();
             player.teleport(worldSpawnPoint);
         } else {
