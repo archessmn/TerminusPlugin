@@ -20,6 +20,7 @@ public class prefix implements CommandExecutor {
                     String senderNick = playerData.get().getString(sender.getUniqueId() + ".mainName");
 
                     targetPlayer.sendMessage("§7[§3§lI§7] " + senderNick + "§7 set your prefix to " + newPrefix + "§7.");
+                    playerData.save();
                 }
             }
         }

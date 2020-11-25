@@ -22,7 +22,7 @@ public class playerLeave implements Listener {
         UUID uuid = player.getUniqueId();
 
         Object playerMainName = playerData.get().getString(uuid + ".mainName");
-        event.setQuitMessage("§f[§4§l+§f]§7 " + playerMainName);
+        event.setQuitMessage("§f[§4§l-§f]§7 " + playerMainName);
 
     }
 }

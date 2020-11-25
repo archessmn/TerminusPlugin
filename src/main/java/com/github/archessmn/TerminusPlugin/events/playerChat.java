@@ -23,7 +23,7 @@ public class playerChat implements Listener {
         String playerMainName = playerData.get().getString(uuid + ".mainName");
         String playerPrefix = playerData.get().getString(uuid + ".prefix");
         String playerSuffix = playerData.get().getString(uuid + ".suffix");
-        String fullName = playerPrefix + playerMainName + playerSuffix;
+        String fullName = playerPrefix + " " + playerMainName + " " + playerSuffix;
 
         event.setFormat(fullName + " §f> §7" + event.getMessage());
     }
