@@ -14,6 +14,8 @@ public class main extends JavaPlugin {
 
     public void onEnable() {
         System.out.print("Loading Terminus");
+        System.out.close();
+
         PluginManager pm = this.getServer().getPluginManager();
 
         /*Setup YML Files*/
