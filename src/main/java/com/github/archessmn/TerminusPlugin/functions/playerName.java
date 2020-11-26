@@ -14,6 +14,7 @@ public class playerName {
         pd.addDefault(uuid + ".rank", "default");
         pd.addDefault(uuid + ".prefix", "");
         pd.addDefault(uuid + ".suffix", "");
+        pd.addDefault(uuid + ".permissions", "");
 
     }
 }

@@ -6,15 +6,10 @@ import org.bukkit.entity.Player;
 public class playerMisc {
     public static boolean isOnline(String playerMentioned) {
         Player playerCheck = Bukkit.getPlayer(playerMentioned);
-        if (playerCheck != null) {
-            return true;
-        } else {
-            return false;
-        }
+        return playerCheck != null;
     }
 
     public static Player getPlayerEntity(String playerMentioned) {
-        Player playerCheck = Bukkit.getPlayer(playerMentioned);
-        return playerCheck;
+        return Bukkit.getPlayer(playerMentioned);
     }
 }

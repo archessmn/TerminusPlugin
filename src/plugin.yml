@@ -10,5 +10,11 @@ commands:
   prefix:
     description: Sets a player's prefix (op only).
 
+  nick:
+    description: Sets a player's nickname (op only).
+
   suffix:
     description: Sets a player's suffix (op only).
+
+  vanish:
+    description: Makes the sender invisible (op only).

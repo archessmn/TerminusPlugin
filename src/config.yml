@@ -1,0 +1,12 @@
+Groups:
+  default:
+    permissions:
+      terminus.commands.spawn
+
+  admin:
+    permissions:
+      terminus.commands.*
+
+  test:
+    permissions:
+      terminus.commands.vanish
