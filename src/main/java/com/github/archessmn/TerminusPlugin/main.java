@@ -38,6 +38,7 @@ public class main extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("nick")).setExecutor(new nick());
         Objects.requireNonNull(this.getCommand("suffix")).setExecutor(new suffix());
         Objects.requireNonNull(this.getCommand("vanish")).setExecutor(new vanish());
+        Objects.requireNonNull(this.getCommand("group")).setExecutor(new group());
     }
 
     public void onDisable() {

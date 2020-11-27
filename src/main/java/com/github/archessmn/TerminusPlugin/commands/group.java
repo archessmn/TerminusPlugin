@@ -16,7 +16,6 @@ import java.util.Objects;
 public class group implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        permsPlayer permsCheck = (permsPlayer) sender;
         FileConfiguration config = main.plugin.getConfig();
         if (sender.isOp()) {
             if (playerMisc.isOnline(args[0])) {
